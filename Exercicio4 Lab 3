@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int NumUser;
+
+    printf("Coloque o número que deseja para imprimir seus divisores: \n");
+    scanf("%d", &NumUser);
+
+    printf("Os divisores de %d são: \n", NumUser);
+
+    for (int i = 1; i <= NumUser; i++) {
+        if (NumUser % i == 0) {
+            printf(" %d", i);
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+}
