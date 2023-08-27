@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int num_user;
+    int numero_sorteado;
+
+    srand(time(NULL));
+    numero_sorteado = 1 + rand() % 100;
+
+    printf("Bem vindo ao jogo\n");
+
+    while (1) {
+        printf("Digite seu palpite: \n");
+        scanf("%d", &num_user);
+
+        int maior = (num_user > numero_sorteado);
+        int acertou = (num_user == numero_sorteado);
+
+        if (acertou) {
+            printf("Parabéns! Você acertou \n");
+            break;
+        } else if (maior) {
+            printf("Seu chute foi maior que o número secreto. o número correto é %d!\n" , numero_sorteado);
+        } else {
+            printf("Seu chute foi menor que o número secreto. o número correto é %d\n" , numero_sorteado);
+        } if (num_user < 0 or num_user > 100) {
+            printf("Esse número é invalido, refaça sua solicitação\n");
+          continue;
+          
+        }
+
+       
+    }
+
+    return 0;
+}
