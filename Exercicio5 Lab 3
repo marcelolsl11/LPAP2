@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int NumeroUsuario, Soma = 0, i;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &NumeroUsuario);
+
+    for (i = 1; i < NumeroUsuario; i++) {
+        if (NumeroUsuario % i == 0) {
+            Soma += i;
+        }
+    }
+
+    if (Soma == NumeroUsuario) {
+        printf("%d é um número perfeito!\n", NumeroUsuario);
+    } else {
+        printf("%d não é um número perfeito.\n", NumeroUsuario);
+    }
+
+    return 0;
+}
