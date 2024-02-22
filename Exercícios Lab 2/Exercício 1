@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+int main() {
+
+  int escolha = 0;
+  int num1 = 0 ;
+  int num2 = 0 ;
+  int soma = 0;
+  int subtracao = 0;
+  int multi = 0;
+  int div = 0;
+  
+  printf("Boa noite! Escolha a opção\n");
+  printf("Opção 1 - soma\n");
+  printf("Opção 2  - subtração\n");
+  printf("Opção 3- Multiplicação\n");
+  printf("Opção 4 - Divisão\n");
+  scanf("%d", &escolha);
+  
+  if(escolha == 1){
+    printf("Coloque os numeros que vão ser somados\n");
+    printf("Primeiro número:  \n");
+    scanf("%d", &num1);
+    
+    printf("Segundo número: \n");
+    scanf("%d", &num2);
+    
+   
+    soma = num1 + num2;
+    
+    printf("O Resultado é %d", soma);
+  }
+
+  if(escolha == 2) {
+    printf("Coloque os numeros que vão ser subtraido\n");
+    printf("Primeiro número:  \n");
+    scanf("%d", &num1);
+
+    printf("Segundo número: \n");
+    scanf("%d", &num2);
+
+    
+    subtracao = num1 - num2;
+
+    printf("O Resultado é %d", subtracao);
+
+  }
+  if(escolha == 3) {
+    printf("Coloque os numeros que vão ser multiplicado\n");
+    printf("Primeiro número:  \n");
+    scanf("%d", &num1);
+
+    printf("Segundo número: \n");
+    scanf("%d", &num2);
+
+    
+    multi = num1 * num2;
+
+    printf("O Resultado é %d", multi);
+
+  }
+  
+  if(escolha == 4) {
+    printf("Coloque os numeros que vão ser divisão\n");
+    printf("Primeiro número:  \n");
+    scanf("%d", &num1);
+
+    printf("Segundo número: \n");
+    scanf("%d", &num2);
+
+
+    div = num1 / num2;
+
+    printf("O Resultado é %d", div);
+
+  }
+  return 0;
+}
